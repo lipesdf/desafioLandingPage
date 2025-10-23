@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&J Celulares</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="animation">
+        <div class="container padding-column-base">
+            <nav class="flex items-center gap-1-5">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="logo S&J">
+                </a>
+            
+                <a href="#promo" class="desktop-only">Promoção</a>
+                <a href="#service" class="desktop-only">Serviços</a>
+                <a href="#contact" class="desktop-only">Contato</a>
+
+                <!--<a href="#atendimento" class="btn btn-sm">Atendimento</a>-->
+            </nav>
+        </div>
+    </header>
+
+    <main class="container animation">
+        <div id="promo" class="container padding-column-large">
+            <div class="container flex padding-column-large items-center flex-colunm gap-1">
+                <h1>Principais ofertas do mês!</h1>
+                <p>É por tempo limitado!</p>
+            </div>
+
+            <section >
+                <div class="container padding-column-large">
+                    <a href="#" class="card">
+                        <img  src="/assets/images/headseat.png" alt="">
+                        <span class="card-text">Headphone</span>
+                    </a>
+                </div>
+
+                <div class="container padding-column-large">
+                    <a href="#" class="card">
+                        <img  src="/assets/images/celular.png" alt="">
+                        <span class="card-text">Celular</span>
+                    </a>
+                </div>
+                    
+                <div class="container padding-column-large">
+                    <a href="#" class="card">
+                        <img  src="/assets/images/relogio.png" alt="">
+                        <span class="card-text">Relógio</span>
+                    </a>
+                </div>
+            </section>
+            
+            
+        </div>
+        
+        <div id="service" class="container padding-column-large">
+            <div class="container flex padding-column-large items-center flex-colunm gap-1">
+                <h2>Conheça nossos serviços</h2>
+                <p>Prezamos pela qualidade!</p>
+            </div>
+
+            <section>
+                <div class="container padding-column-large">
+                    <a href="#" class="card">
+                        <img  src="/assets/images/reparo-placa.png" alt="">
+                        <span class="card-text">Reparo em telefone</span>
+                    </a>
+                </div>
+                    
+                <div class="container padding-column-large">
+                    <a href="#" class="card">
+                        <img  src="/assets/images/venda-acessorios.png" alt="">
+                        <span class="card-text">Venda de acessórios</span>
+                    </a>
+                </div>
+
+                <div class="container padding-column-large">
+                    <a href="#" class="card">
+                        <img  src="/assets/images/reparo-computador.png" alt="">
+                        <span class="card-text">Reparo em notebook</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+        
+    </main>
+
+    <form id="contact" enctype="multipart/form-data" method="post" class="container padding-column-large" >
+          <fieldset>
+            <strong>Entre em Contato</strong>
+
+            <div class="container-form" >
+              <label for="name">Nome completo:</label>
+              <input 
+                id="name"
+                name="name" 
+                type="text"
+                placeholder="Nome">
+            </div>
+
+            <div class="container-form">
+              <label for="phone">Telefone:</label>
+              <input 
+                id="phone"
+                name="phone" 
+                type="tel"
+                pattern="[0-9]{2}[0-9]{4,5}[0-9]{4}"
+                required
+                placeholder="34 9999-9999">
+            </div>
+
+            <div class="container-form">
+              <label for="description">Informações adicionais:</label>
+              <textarea 
+                name="description" 
+                id="description" 
+                cols="30" 
+                rows="5"
+                placeholder="Comentário ou dúvida..."></textarea>
+            </div>
+
+            <a href="" class="btn btn-lg" aria-label="Enviar"></a>
+          </fieldset>
+        </form>
+
+    <footer class="container padding-column-base">
+        <div class="flex flex-colunm">
+            <div class="social-midia">
+                <a href="#" class="icon" aria-label="whats"></a>
+                <a href="#" class="icon" aria-label="insta"></a>
+                <a href="#" class="icon" aria-label="x"></a>
+                <a href="#" class="icon" aria-label="discord"></a>
+            </div>
+            
+            <div class="rights">
+                <p>
+                    ©2025 Felipe Technologies, Inc.
+                </p>
+            </div>
+            
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

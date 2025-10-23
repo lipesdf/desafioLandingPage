@@ -1,0 +1,132 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --bg-color: #000000;
+    --text-color-primary: #f4f4f5;
+    --brand-color-primary: #F7B733;
+    --brand-color-secondary: #ffd700;
+
+    --font-family: "Inter",system-ui, sans-serif;
+    --font-base: 400;
+    --font-medium: 500;
+    --font-bold: 800;
+
+    /* Fontes mobile */
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2.5rem;
+    
+    --padding-inline: 1.5rem;
+
+    --padding-column-base:1rem;
+    --padding-column-large:1.5rem;
+    --padding-column-xlarge:3rem;
+}
+
+
+html {
+    font-family: var(--font-family);
+    font-weight: var(--font-base);
+    font-size: var(--fs-base);
+    line-height: 1.6;
+    color: var(--text-color-primary);
+    scroll-behavior: smooth;
+}
+
+body { 
+    background-color: var(--bg-color);
+}
+
+main p{
+    color: var(--brand-color-secondary);
+}
+
+h1,h2,h3 {
+    line-height: 1.2;
+    color: var(--text-color-primary);
+    font-weight: var(--font-bold);
+}
+
+h1 {
+    font-size: var(--fs-2xl);
+}
+
+h2 {
+    font-size: var(--fs-xl);
+}
+
+h3 {
+    font-size: var(--fs-lg);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size:larger;
+}
+
+a:hover{
+    background-color: #000000;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+ul[role='list']{
+    list-style: none;
+}
+
+.animation {
+  animation-name: move;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+/* Para navegadores a parti de 1280 */
+@media (width >= 80em) {
+
+    :root {
+        --fs-lg: 2rem;
+        --fs-xl: 3rem;
+        --fs-2xl: 4rem;
+
+        --padding-inline: 2rem;
+
+        --padding-column-base:1.5rem;
+        --padding-column-large:2.5rem;
+        --padding-column-xlarge:5rem;
+    }
+
+    section{
+        display: flex;
+        gap: 1.5rem;
+    }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

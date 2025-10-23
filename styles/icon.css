@@ -1,0 +1,56 @@
+a.logo img{
+    width: 5rem;
+    height: 5rem;
+    display: block;
+}
+
+a.icon{
+    --bg-img:"";
+    background-image: var(--bg-img);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+
+    -webkit-background-clip: initial;
+    background-clip: initial;
+}
+
+a[aria-label="insta"]{
+    background-image: url(../assets/icons/instagram.svg);
+}
+
+a[aria-label="insta"]:hover{
+    background-image: url(../assets/icons/instagram-hover.svg);
+}
+
+a[aria-label="ticktok"]{
+    background-image: url(../assets/icons/ticktok.svg);
+}
+
+a[aria-label="ticktok"]:hover{
+    background-image: url(../assets/icons/ticktok-hover.svg);
+}
+
+a[aria-label="x"]{
+    background-image: url(../assets/icons/x.svg);
+}
+
+a[aria-label="x"]:hover{
+    background-image: url(../assets/icons/x-hover.svg);
+}
+
+a[aria-label="discord"]{
+    background-image: url(../assets/icons/discord.svg);
+}
+
+a[aria-label="discord"]:hover{
+    background-image: url(../assets/icons/discord-hover.svg);
+}
+
+a[aria-label="whats"]{
+    background-image: url(../assets/icons/whatsapp.svg);
+}
+
+a[aria-label="whats"]:hover{
+    background-image: url(../assets/icons/whatsapp-hover.svg);
+}

@@ -1,0 +1,64 @@
+.padding-column-base {
+    padding-block: var(--padding-column-base);
+}
+
+.padding-column-large {
+    padding-block: var(--padding-column-large);
+}
+
+.padding-column-xlarge {
+    padding-block: var(--padding-column-xlarge);
+}
+
+
+.container {
+    --max-width: 375px;
+    width: min(var(--max-width), 100% - var(--padding-inline) * 2);
+    margin-inline: auto;
+}
+
+.desktop-only{
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-colunm {
+    flex-direction: column;
+}
+
+.gap-1{
+    gap: 1rem;
+}
+
+.gap-1-5{
+    gap: 1.5rem;
+}
+
+.margin-{
+    margin-top: 5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+@media(width >= 80em){
+    .container{
+        --max-width: 80rem;
+    }
+
+    .desktop-only{
+        display: initial;
+    }
+}

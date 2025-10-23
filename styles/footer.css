@@ -1,0 +1,17 @@
+.social-midia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.rights{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (width >= 80em) {
+
+}
