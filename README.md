@@ -72,12 +72,11 @@ As imagens presentes no projeto foram **geradas com auxílio do modelo de IA Gem
 
 ## 🖥️ Demonstração
 
-👉 Segue link do projeto (ex: [Netlify](https://www.netlify.com/) ou GitHub Pages).
+👉 Segue link do projeto [https://www.netlify.com/](https://hilarious-pixie-a5c4b1.netlify.app/).
 
 ---
 
 ## 📚 Autor
 
 **Felipe Sérgio**
-Projeto: ASC II
 Universidade Federal de Uberlândia (UFU)
